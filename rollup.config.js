@@ -1,6 +1,7 @@
 import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
+import autoPreprocess from "svelte-preprocess";
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
@@ -17,6 +18,8 @@ export default {
 	},
 	plugins: [
 		svelte({
+			// Enables the use of TypeScript in the .svelte file
+			preprocess: autoPreprocess(),
 			// enable run-time checks when not in production
 			dev: !production,
 			// we'll extract any component CSS out into
