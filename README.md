@@ -1,4 +1,6 @@
-# Steppa
+# Svelte with TypeScript Template
+
+Template repository for bootstrapping a Svelte with TypeScript project.
 
 ---
 
