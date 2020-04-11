@@ -1,40 +1,33 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# Steppa
 
 ---
 
-# svelte app
+## Technology
+Created using Svelte
+- Bootstrapped from [sveltejs/component-template](https://github.com/sveltejs/component-template)
+    - To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+    - Rollup.js as module bundler
+- Added support for TypeScript
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
-
+## Get started (first time)
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
-
-## Get started
-
-Install the dependencies...
-
+Install the dependencies (from within the root)...
 ```bash
-cd svelte-app
 npm install
 ```
 
-...then start [Rollup](https://rollupjs.org):
-
+## Run
+Start [Rollup](https://rollupjs.org):
 ```bash
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+Navigate to [localhost:5000](http://localhost:5000). 
+- You should see your app running. 
+- Edit a component file in `src`, save it. The page will automatically be reloaded
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
-
 
 ## Building and running in production mode
 
@@ -44,7 +37,8 @@ To create an optimised version of the app:
 npm run build
 ```
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
+You can run the newly built app with `npm run start`.
+- This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
 
 
 ## Single-page app mode

@@ -8,7 +8,7 @@ const app = new App({
 });
 
 function getName(): string {
-	return 'Worldly world!';
+	return 'world!';
 }
 
 export default app;
